@@ -1,6 +1,6 @@
 # Cache and logs (Symfony2)
-application/app/cache/*
-application/app/logs/*
+/application/app/cache/*
+/application/app/logs/*
 !app/cache/.gitkeep
 !app/logs/.gitkeep
 
@@ -8,37 +8,38 @@ application/app/logs/*
 application/app/spool/*
 
 # Cache, session files and logs (Symfony3)
-application/var/cache/*
-application/var/logs/*
-application/var/sessions/*
+/application/var/cache/*
+/application/var/logs/*
+/application/var/sessions/*
 !var/cache/.gitkeep
 !var/logs/.gitkeep
 !var/sessions/.gitkeep
 
 # Parameters
-application/app/config/parameters.yml
-application/app/config/parameters.ini
+/application/app/config/parameters.yml
+/application/app/config/parameters.ini
 
 # Managed by Composer
-application/app/bootstrap.php.cache
-application/var/bootstrap.php.cache
-application/bin/*
+/application/app/bootstrap.php.cache
+/application/var/bootstrap.php.cache
+/application/bin/*
 !bin/console
 !bin/symfony_requirements
 
 # Assets and user uploads
-application/web/bundles/
-application/web/uploads/
+/application/web/bundles/
+/application/web/uploads/
 
 # PHPUnit
-application/app/phpunit.xml
-application/phpunit.xml
+/application/app/phpunit.xml
+/application/phpunit.xml
 
 # Build data
-application/build/
+/application/build/
 
 # Backup entities generated with doctrine:generate:entities command
 **application/Entity/*~
 
 # Netbeans metadata
+/nbproject/
 /nbproject/private/
