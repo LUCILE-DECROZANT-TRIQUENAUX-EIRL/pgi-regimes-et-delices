@@ -43,3 +43,22 @@ application/app/spool/*
 # Netbeans metadata
 /nbproject/
 /nbproject/private/
+
+# Dossiers ignorés par défaut lors de la création d'un projet Symfony 3.4
+/application/.web-server-pid
+/application/app/config/parameters.yml
+/application/build/
+/application/phpunit.xml
+/application/var/*
+!/application/var/cache
+/application/var/cache/*
+!/applicationvar/cache/.gitkeep
+!/application/var/logs
+/application/var/logs/*
+!/application/var/logs/.gitkeep
+!/application/var/sessions
+/application/var/sessions/*
+!/application/var/sessions/.gitkeep
+!/application/var/SymfonyRequirements.php
+/application/vendor/
+/application/web/bundles/
