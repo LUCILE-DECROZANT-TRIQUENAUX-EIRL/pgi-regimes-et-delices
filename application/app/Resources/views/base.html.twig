@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <title>{% block title %}Régimes & Délices{% endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('images/icon/64-64.png') }}" />
 
         <!-- -------- CSS -------- -->
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
@@ -17,6 +17,47 @@
     </head>
 
     <body>
-        {% block body %}{% endblock %}
+        <!-- Barre de navigation du top -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-menu" aria-expanded="false">
+                        <span class="sr-only">Ouvrir le menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/" title="Accueil"><span class="glyphicon glyphicon-home"></span></a>
+                </div>
+                <!-- Contenu des menus de la barre de navigation -->
+                <div class="collapse navbar-collapse" id="top-menu">
+                    <ul class="nav navbar-nav"></ul>
+                    <ul class="nav navbar-nav navbar-right"></ul>
+                </div>
+            </div>
+        </nav>
+        <div id="corps" class="container-fluid">
+            {% block body %}{% endblock %}
+        </div>
+        <!-- Barre de navigation du bottom -->
+        <footer class="footer">
+            <nav class="navbar navbar-default navbar-bottom">
+                <div class="container">
+                    <p class="navbar-text">
+                        <a href="https://github.com/LUCILE-DECROZANT-TRIQUENAUX-EIRL/pgi-regimes-et-delices" class="navbar-link" target="_blank">
+                            Code source <span class="glyphicon glyphicon-share"></span>
+                        </a>
+                    </p>
+                    <p class="navbar-text">
+                        Copyright 2018 Régimes & Délices
+                    </p>
+                    <p class="navbar-text">
+                        <a href="https://www.gnu.org/licenses/agpl-3.0" class="navbar-link" target="_blank">
+                            Application sous licence AGPL v3 <span class="glyphicon glyphicon-share"></span>
+                        </a>
+                    </p>
+                </div>
+            </nav>
+        </footer>
     </body>
 </html>
