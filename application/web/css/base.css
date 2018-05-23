@@ -1,0 +1,64 @@
+/* -------------------------------------------------------------------------------- */
+/* Positionnement du footer en bas de la page quand le contenu n'en occupe pas 100% */
+/* -------------------------------------------------------------------------------- */
+html {
+    position:relative;
+    min-height:100%;
+}
+
+/* Laisse de la place pour éviter que les barres de navigation ne cachent le contenu */
+body {
+    padding-top:70px;
+    margin-bottom:70px;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:50px;
+}
+
+/* ----------------- */
+/* Formate le footer */
+/* ----------------- */
+.navbar-bottom {
+    margin-bottom:0;
+    text-align:center;
+}
+
+.navbar-bottom .navbar-text {
+    display:inline-block;
+    float:none;
+    vertical-align:top;
+    margin:15px 25px;
+}
+
+.navbar-bottom .glyphicon {
+    color:#888;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Met en place la classe utilitaire .spacer à appliquer pour espacer un contenu de celui du dessus */
+/* ------------------------------------------------------------------------------------------------ */
+.spacer-small {
+    margin-top:20px;
+}
+
+.spacer,
+.spacer-default {
+    margin-top:40px;
+}
+
+.spacer-large {
+    margin-top:60px;
+}
+
+/* ---------------------------------- */
+/* Formate la barre de navigation top */
+/* ---------------------------------- */
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:focus,
+.navbar-default .navbar-nav > .disabled > a:hover {
+    color: #7a8288;
+}

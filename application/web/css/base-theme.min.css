@@ -1422,13 +1422,3 @@ td.visible-print,th.visible-print{display:table-cell!important}
 @media print{.visible-print-inline-block{display:inline-block!important}
 .hidden-print{display:none!important}
 }
-html{position:relative;min-height:100%;}
-body{padding-top:70px;margin-bottom:70px;}
-.navbar-bottom{margin-bottom:0px;}
-.footer{position:absolute;bottom:0;width:100%;height:50px;}
-.navbar-bottom .navbar-text{display:inline-block;float:none;vertical-align:top;margin:15px 25px;}
-.navbar-bottom{text-align:center;}
-.navbar-bottom .glyphicon{color:#888}
-.spacer-small{margin-top: 20px;}
-.spacer-default{margin-top: 40px;}
-.spacer-large{margin-top: 60px;}
