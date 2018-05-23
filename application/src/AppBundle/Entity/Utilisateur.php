@@ -133,13 +133,13 @@ class Utilisateur implements UserInterface
      * @return string[]
      */
     public function getRoles() {
-        $em = $this->getDoctrine()->getManager();
-        $roles = $em->getRepository('AppBundle:Role')->findAll();
+//        $em = $this->getDoctrine()->getManager();
+//        $roles = $em->getRepository('AppBundle:Role')->findAll();
         
-        $roles_string = [];
-        foreach($roles as $role) {
-            $roles_string[] = $role->getLabel();
-        }
+        $roles_string = ['Administrateur'];
+//        foreach($roles as $role) {
+//            $roles_string[] = $role->getLabel();
+//        }
         
         return $roles_string;
     }
