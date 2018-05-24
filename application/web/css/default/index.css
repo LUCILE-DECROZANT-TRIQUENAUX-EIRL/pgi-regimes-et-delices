@@ -1,0 +1,33 @@
+/* -------------------------------- */
+/* Formate les boutons de l'accueil */
+/* -------------------------------- */
+#container-buttons a.btn.disabled {
+    cursor: not-allowed;
+    pointer-events: auto;
+}
+
+#container-buttons a.btn > span {
+    display: table-cell;
+    vertical-align: middle;
+    white-space: normal;
+}
+
+#container-buttons a.btn {
+    display: table;
+    width: 100%;
+    height: 100px;
+    font-size: 16px;
+    table-layout: fixed;
+}
+
+#container-buttons a.btn > span.glyphicon {
+    width: 40px;
+    font-size: 25px;
+    border-right: 12px;
+}
+
+#container-buttons a.btn > span.button-label {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 300;
+}
