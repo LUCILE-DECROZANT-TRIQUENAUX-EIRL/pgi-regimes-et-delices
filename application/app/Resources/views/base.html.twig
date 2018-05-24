@@ -35,9 +35,15 @@
                 <div class="collapse navbar-collapse" id="top-menu">
                     <ul class="nav navbar-nav">
                         {% if is_granted('IS_AUTHENTICATED_FULLY') %}
-                            <li class="disabled"><a href="">Catalogue</a></li>
-                            <li class="disabled"><a href="">Stocks</a></li>
-                            <li class="disabled"><a href="">Commandes clients</a></li>
+                            <li class="disabled" data-toggle="tooltip" data-placement="bottom" title="Sera rendu disponible ultérieurement">
+                                <a href="">Catalogue</a>
+                            </li>
+                            <li class="disabled" data-toggle="tooltip" data-placement="bottom" title="Sera rendu disponible ultérieurement">
+                                <a href="">Stocks</a>
+                            </li>
+                            <li class="disabled" data-toggle="tooltip" data-placement="bottom" title="Sera rendu disponible ultérieurement">
+                                <a href="">Commandes clients</a>
+                            </li>
                         {% endif %}
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
@@ -47,11 +53,19 @@
                                     Administration <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li class="disabled"><a href="">Fournisseurs</a></li>
-                                    <li class="disabled"><a href="">Logisticiens</a></li>
-                                    <li class="disabled"><a href="">Clients</a></li>
+                                    <li class="disabled" data-toggle="tooltip" data-placement="left" title="Sera rendu disponible ultérieurement">
+                                        <a href="">Fournisseurs</a>
+                                    </li>
+                                    <li class="disabled" data-toggle="tooltip" data-placement="left" title="Sera rendu disponible ultérieurement">
+                                        <a href="">Logisticiens</a>
+                                    </li>
+                                    <li class="disabled" data-toggle="tooltip" data-placement="left" title="Sera rendu disponible ultérieurement">
+                                        <a href="">Clients</a>
+                                    </li>
                                     <li role="separator" class="divider"></li>
-                                    <li class="disabled"><a href="">Comptes utilisateurs</a></li>
+                                    <li class="disabled" data-toggle="tooltip" data-placement="left" title="Sera rendu disponible ultérieurement">
+                                        <a href="">Comptes utilisateurs</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -59,7 +73,9 @@
                                     {{ app.user.username }} <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li class="disabled"><a href="">Profil</a></li>
+                                    <li class="disabled" data-toggle="tooltip" data-placement="left" title="Sera rendu disponible ultérieurement">
+                                        <a href="">Profil</a>
+                                    </li>
                                     <li role="separator" class="divider"></li>
                                     <li>
                                         <a href="{{ logout_path() }}">
